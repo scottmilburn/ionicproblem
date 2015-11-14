@@ -1,0 +1,55 @@
+<ion-view class="has-tabs-top" view-title="Library">
+  <ion-content class="padding">
+
+<div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+    <div class="tabs">
+      <a class="tab-item active" id="tab-videos" href="#">
+Videos
+      </a>
+
+      <a class="tab-item" id="tab-photos" href="#">
+Photos
+      </a>
+
+        <i class="icon ion-ios-folder-outline"></i>
+
+    </div>    
+  </div>
+
+  <div class="tab-content" id="tab-videos-content">
+      <h4>Original Footage</h4>
+      <img class="video-item" src="img/lego.jpg">
+      <img class="video-item" src="img/lego.jpg">
+
+      <h4>Ceate Movie</h4>
+      <img class="video-item" src="img/lego.jpg">
+      <img class="video-item" src="img/lego.jpg">
+  </div>
+
+  <div class="tab-content" id="tab-photos-content">
+      <h4>Original Footage</h4>
+      <img class="photo-item" src="img/lego.jpg">
+      <img class="photo-item" src="img/lego.jpg">
+
+      <h4>Ceate Movie</h4>
+      <img class="photo-item" src="img/lego.jpg">
+      <img class="photo-item" src="img/lego.jpg">
+  </div>
+
+  </ion-content>
+</ion-view>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+  $('#tab-videos').on('click', function() {
+    alert('howdie');
+    $('#tab-videos-content').addClass('display-show');
+    $('#tab-photos-content').addClass('display-hide');
+  });
+
+  $('#tab-photos').on('click', function() {
+    $('#tab-photos-content').addClass('display-show');
+    $('#tab-videos-content').addClass('display-hide');
+  });
+</script>
